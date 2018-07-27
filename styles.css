@@ -1,0 +1,158 @@
+:root {
+  --background-header:#7FCDCD;
+  --background-footer: #FFF;
+  --background-image: url('https://raw.githubusercontent.com/ahsanazim/slack-landing-page/master/screen_caps/menu_background.jpg');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-row: 80px auto 30px;
+  background-image: var(--background-image);
+}
+
+header {
+  display: flex;
+  background-color: var(--background-header);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  height: 40px;
+}
+
+nav {
+  margin: 0px auto;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+  margin: 20px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.banner img {
+  max-height: 500px;
+  max-width: 500px;
+  flex-basis: 100px;
+  margin-right: 50px;
+}
+
+.banner h2 {
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.banner h2 span {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.center-para {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.main-buttons {
+  height: 50px;
+  border: 2px white solid;
+  background-color: transparent;
+  padding: 20px;
+  color: white;
+  margin-right: 50px;
+  border-radius: 5px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+h3 {
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.small-feature-image {
+  width: 500px;
+  height: 500px;
+}
+
+.two-ul-centered {
+  display: flex;
+}
+
+.two-ul-centered ul {
+  margin-right: 40px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.two-ul-centered li {
+  margin-bottom: 10px;
+}
+
+#contact {
+  position: relative;
+}
+#contact h3 {
+  position: absolute;
+  top: 40px;
+}
+
+.form-group {
+  height: 30px;
+  width: 100%;
+  padding: 5px;
+  margion-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.form-group:focus {
+  border: 1px blue solid;
+}
+
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 1px blue solid;
+}
+
+#textarea {
+  height: 50px;
+  resize:vertical;
+}
+
+#footer {
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  background-color: var(--background-header);
+}
